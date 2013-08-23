@@ -17,6 +17,7 @@ class FileInputStream extends InputStream {
 
     // File channel
     private $channel = null;
+    
     // File
     private $file = null;
 
