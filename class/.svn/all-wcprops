@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class
+END
+IOException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/IOException.class.php
+END
+HttpMultipleOutputStream.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/HttpMultipleOutputStream.class.php
+END
+FileChannel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileChannel.class.php
+END
+FileNotWritableException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileNotWritableException.class.php
+END
+InputStream.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/InputStream.class.php
+END
+FileNotFoundException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileNotFoundException.class.php
+END
+FileInputStream.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileInputStream.class.php
+END
+OutputStream.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/OutputStream.class.php
+END
+FileOutputStream.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileOutputStream.class.php
+END
+HttpSingleOutputStream.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/HttpSingleOutputStream.class.php
+END
+FileNotReadableException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileNotReadableException.class.php
+END
+File.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/File.class.php
+END
+ArgumentException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/ArgumentException.class.php
+END
+FileSystem.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/rps-cpsa/!svn/ver/765/branches/mqc-3158-auto-ingest-content-take2/GUI/inc/lib/IO/class/FileSystem.class.php
+END

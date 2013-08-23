@@ -1,0 +1,93 @@
+<?php
+
+/*
+ * HttpSingleOutputStream.class.php
+ * 
+ * @author Dalmir da Silva <dalmir.silva@hp.com>
+ */
+
+/**
+ * A specific output stream for writing data in http output
+ */
+
+/**
+ * Class for http single output stream.
+ */
+final class HttpSingleOutputStream extends FileOutputStream {
+
+    // The associated input stream
+    private $input_stream = null;
+
+    /**
+     * Constructor
+     */
+    public function HttpSingleOutputStream() {
+        $this->setFile(new File("php://output"));
+        $this->createChannel();
+        $this->open();
+    }
+
+    /**
+     * Sends headers to the client
+     */
+    public function sendHeaders() {
+        ob_end_clean();
+        header("Content-type: " . $this->getInputStream()->getFile()->getMimeType());
+        header("Content-Transfer-Encoding: binary");
+        header("Content-Length: " . $this->getInputStream()->getFile()->length() . "");
+        header("Content-Disposition: attachment; filename=\"" . $this->getInputStream()->getFile()->name() . "\";");
+    }
+
+    /**
+     * Sets the associated input stream
+     * 
+     * @param	FileInputStream	File input stream
+     */
+    public function setInputStream($input_stream) {
+        $this->input_stream = $input_stream;
+    }
+
+    /**
+     * Returns the associated input stream
+     * 
+     * @return	FileInputStream	File input stream
+     */
+    public function getInputStream() {
+        return $this->input_stream;
+    }
+
+    /**
+     * Starts the stream to the client
+     *
+     * @param	int	Buffer length
+     */
+    public function startStream($lenght = 1) {
+        $this->sendHeaders();
+        while ($this->getInputStream()->available()) {
+            $this->write($this->getInputStream()->read($lenght), $lenght);
+        }
+        $this->getInputStream()->close();
+        $this->close();
+    }
+
+    /**
+     * Overrides the open the channel to not check if file exists
+     *
+     * @return	bool						true if success, false othewise
+     */
+    public function open() {
+        return $this->getChannel()->open("wb");
+    }
+
+    /**
+     * Overrides the write method, just for add ob_flush(), is required to work with http output stream
+     *
+     * @param	mixed	Content
+     * @param	int		Length of data
+     */
+    public function write($content, $lenght = null) {
+        parent::write($content, $lenght);
+        ob_flush();
+    }
+
+}
