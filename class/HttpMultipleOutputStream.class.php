@@ -3,7 +3,7 @@
 /*
  * HttpMultipleOutputStream.class.php
  * 
- * @author Dalmir da Silva <dalmir.silva@hp.com>
+ * @author	Dalmir da Silva	<dalmirdasilva@gmail.com>
  */
 
 /**

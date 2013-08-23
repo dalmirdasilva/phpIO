@@ -4,9 +4,9 @@
  * IO library. Includes all needed classes.
  * 
  *
- * @author	Dalmir da Silva	<dalmir.silva@hp.com>
+ * @author	Dalmir da Silva	<dalmirdasilva@gmail.com>
  */
-// Include necessary dependences
+
 include_once(dirname(__FILE__) . "/class/FileSystem.class.php");
 include_once(dirname(__FILE__) . "/class/File.class.php");
 include_once(dirname(__FILE__) . "/class/FileChannel.class.php");
