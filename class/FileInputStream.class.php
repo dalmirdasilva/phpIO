@@ -10,6 +10,8 @@
  * Obtains input bytes from a file in a file system.
  */
 
+define("FILE_IS_BUFFER_LENGTH", 4096);
+
 /**
  * Class for file input stream
  */
@@ -97,5 +99,15 @@ class FileInputStream extends InputStream {
     public function close() {
         return $this->getChannel()->close();
     }
-
+    
+    /**
+     * Read a line from the file
+     * 
+     * - For text files
+     * 
+     * @return	string	The current file of the file pointer.
+     */
+    public function readLine() {
+        return $this->getChannel()->readLine(FILE_IS_BUFFER_LENGTH);
+    }
 }
