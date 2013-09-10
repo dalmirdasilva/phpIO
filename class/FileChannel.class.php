@@ -124,11 +124,11 @@ class FileChannel {
     /**
      * Reads a line from the file chennel.
      */
-    public function readLine($lengh) {
+    public function readLine($length = 1024) {
 
         if (!$this->isOpened())
             throw new IOexception("Stream closed");
 
-        return @fgets($this->channel, $lenght);
+        return @fgets($this->channel, $length);
     }
 }
